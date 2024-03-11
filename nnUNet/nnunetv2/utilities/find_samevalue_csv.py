@@ -1,0 +1,21 @@
+import pandas as pd
+# import pandas.Data
+
+pd.set_option("display.max_rows", 1000)
+df = pd.read_csv('/home/siat/Downloads/clinical2.CSV')
+# print(df)
+# print(df.columns)
+# print(len(df))
+df1 = df.drop_duplicates(subset=['Age',' BMI', 'Triglyceride'], keep=False)
+print(len(df1))
+print(df1. )
+# df2 = df.drop_duplicates(subset=['Triglyceride'], keep=False)
+# print(len(df2))
+# df2 = df.duplicated(subset=['Gender'])
+# print(len(df2))
+# # print(df2)
+# df1 = df.duplicated(subset=['Age',' BMI', 'Triglyceride'], False)
+# print(len(df1))
+# print(df1)
+# df.to_csv("/home/siat/Downloads/clinical3.CSV")
+# df.to_excel("/home/siat/Downloads/clinical3.xlsx")
